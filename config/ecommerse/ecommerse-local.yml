@@ -2,9 +2,6 @@ spring:
   application:
     name: config-nexus
 
-  profiles:
-    active: local
-
   cloud:
     config:
       server:

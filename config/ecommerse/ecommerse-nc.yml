@@ -2,9 +2,6 @@ spring:
   application:
     name: nc
 
-  profiles:
-    active: nc
-
   cloud:
     config:
       server:
