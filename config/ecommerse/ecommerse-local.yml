@@ -1,4 +1,3 @@
-# local입니다!!!!!!
 spring:
   application:
     name: config-nexus
