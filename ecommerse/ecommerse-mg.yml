@@ -1,0 +1,39 @@
+# MG입니다!!!!!!
+spring:
+  application:
+    name: config-nexus
+
+  profiles:
+    active: subversion
+
+  cloud:
+    config:
+      server:
+        svn:
+          uri: http://172.21.251.13/svn/Tools
+          username: jji
+          password: mistil12!@
+          default-label: trunk
+
+        health:
+          repositories:
+            svn:
+              label: trunk
+
+server:
+  port: 8888
+
+management:
+  endpoint:
+    health:
+      enabled: true
+    beans:
+      enabled: true
+
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude:
+          - quartz
+          - caches
